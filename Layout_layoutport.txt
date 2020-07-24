@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:text="@string/period"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:autofillHints="14"
+        android:hint="10" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etext1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/set" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etext1"
+        android:layout_toLeftOf="@id/button1"
+        android:text="@string/start" />
+
+    <TextView
+        android:id="@+id/textAX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:text="@string/ax"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/valueAX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textAX"
+        android:layout_toRightOf="@+id/textAX"
+        android:layout_weight="1"
+        android:text="0"
+        android:textSize="20dp"
+        android:layout_toEndOf="@+id/textAX" />
+
+    <TextView
+        android:id="@+id/textAY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAX"
+        android:text="Ось AY: "
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/valueAY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textAY"
+        android:layout_toRightOf="@+id/textAY"
+        android:layout_weight="1"
+        android:text="0"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textAZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAY"
+        android:layout_weight="1"
+        android:text="Ось AZ: "
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/valueAZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textAZ"
+        android:layout_toRightOf="@+id/textAZ"
+        android:layout_weight="1"
+        android:text="0"
+        android:textSize="20dp" />
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/textGX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAZ"
+        android:layout_marginTop="25dp"
+        android:text="Ось GX: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/valueGX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textGX"
+        android:layout_toRightOf="@+id/textGX"
+        android:layout_weight="1"
+        android:text="0"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textGY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textGX"
+        android:layout_weight="1"
+        android:text="Ось GY: "
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/valueGY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textGY"
+        android:layout_toRightOf="@+id/textGY"
+        android:layout_weight="1"
+        android:text="0"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textGZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textGY"
+        android:layout_weight="1"
+        android:text="Ось GZ: "
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/valueGZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textGZ"
+        android:layout_toRightOf="@+id/textGZ"
+        android:layout_weight="1"
+        android:text="0"
+        android:textSize="20dp" />
+
+</RelativeLayout>
